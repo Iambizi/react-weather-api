@@ -6,10 +6,11 @@ class Form extends Component {
     return (
       <React.Fragment>
         <form
-          onSubmit={e => {
-            e.preventDefault();
-            this.props.getWeather();
-          }}
+          // onSubmit={e => {
+          //   e.preventDefault();
+          //   this.props.getWeather();
+          // }}
+          onSubmit={this.props.getWeather}
         >
           <input type="text" name="city" placeholder="City..." />
           <input type="text" name="country" placeholder="Country..." />
